@@ -1,0 +1,39 @@
+{
+  "name": "Project-Starter",
+  "version": "0.0.1",
+  "title": "Project-Starter",
+  "description": "This is a starter repo for PHP based project",
+  "keywords": "PHP",
+  "author": {
+    "name": "Karl Groves",
+    "email": "karl@karlgroves.com",
+    "url": "http://www.karlgroves.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-uncss": "~0.2.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-shell": "~0.6.4",
+    "load-grunt-tasks": "~0.3.0",
+    "grunt-git": "~0.2.5",
+    "grunt-contrib-copy": "~0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:karlgroves/project-starter.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/karlgroves/project-starter/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
