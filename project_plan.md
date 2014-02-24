@@ -19,10 +19,10 @@ Note 2: UI will be presented using PHP templates. Contact karl@karlgroves.com fo
 ## Back End Needs
 Backend will utilizing Karl's PHP library so much of the backend will simply extend existing CRUD functionality in those classes.  
 
-* users class - CRUD class for managing users
-* results class - CRUD class for managing results
-* test file class - CRUD class for managing test files
-* reports class - CRUD class for creating results
+* users class - CRUD class for managing users (in progress)
+* results class - CRUD class for managing results (in progress)
+* test file class - CRUD class for managing test files (in progress)
+* reports class - CRUD class for creating results (in progress)
 
 ## Server Needs
 * CRON jobs (and associated files, scripts, bash scripts, etc.)

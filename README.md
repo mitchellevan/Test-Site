@@ -4,4 +4,5 @@ This repo holds all of the code for the Open Ally Test System. Test files and te
 
 
 ## Changelog (this document)
-February 22, 2014 - Initial Creation
+* February 23, 2014 - Updates to repo, including (starting) codebase based on Karl Groves's [project-starter](https://bitbucket.org/karlgroves/project-starter)
+* February 22, 2014 - Initial Creation

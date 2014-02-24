@@ -11,7 +11,7 @@ The Open A11y Test Site is built on a basic LAMP Platform. The backend is run on
 * Issue your pull request against that specific issue. 
 
 ## Contributing to Front-End work
-Given the nature of this system, we want the front-end to support the widest range of user agents and assistive technologies as possible. Do not use the latest and greatest bleeding edge feature unless it degrades gracefully. Try to avoid workarounds.
+Given the nature of this system, we want the front-end to support the widest range of user agents and assistive technologies as possible. Do not use the latest and greatest bleeding edge feature unless it degrades gracefully. Try to avoid workarounds and polyfills.
 
 ### Accessibility
 * Naturally, given the nature of this system, all work must be accessible and must conform, without exception, to WCAG 2.0 Level AAA
@@ -26,7 +26,7 @@ Given the nature of this system, we want the front-end to support the widest ran
 * All non-trivial features must be accompanied by working unit tests.
 
 ## Contributing to Back-End work
-[Coming Soon]
+Backend work is driven by PHP & MySQL using the [gs_libs](https://bitbucket.org/karlgroves/gs_libs) PHP library from Karl Groves. The database class in that library is based on PDO.  Documentation for gs_libs is available in HTML, latex, rtf, and even man pages.
 
 ## Bugs and Improvements
 * Find a bug? Create an [issue](https://github.com/Open-A11y-Testing/Test-Site/issues).

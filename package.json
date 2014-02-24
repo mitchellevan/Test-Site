@@ -1,9 +1,9 @@
 {
-  "name": "Project-Starter",
+  "name": "Open A11y Testing",
   "version": "0.0.1",
-  "title": "Project-Starter",
-  "description": "This is a starter repo for PHP based project",
-  "keywords": "PHP",
+  "title": "Open-A11y-Testing",
+  "description": "This website facilitates the testing",
+  "keywords": "Accessibility, HTML5, WAI-ARIA",
   "author": {
     "name": "Karl Groves",
     "email": "karl@karlgroves.com",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:karlgroves/project-starter.git"
+    "url": "git@github.com:Open-A11y-Testing/Test-Site.git"
   },
   "bugs": {
     "url": "https://bitbucket.org/karlgroves/project-starter/issues"

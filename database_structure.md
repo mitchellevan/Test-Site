@@ -21,6 +21,7 @@ Fields:
 * atType
 * atBrand
 * atVersion
+* deleted (enum '0','1')
 
 ### Table: results
 This table holds the specific results of testing - in other words whether the test passed or failed and why.
@@ -32,6 +33,7 @@ Fields:
 * testFileID (maps to testFiles.testFileID)
 * result (enum 'Pass', 'Fail')
 * comments 
+* deleted (enum '0','1')
 
 ### Table: testFiles
 This table holds the details of the files to be tested. It is expected that this information will be automatically generated.
@@ -40,3 +42,4 @@ Fields:
 
 * testFileID
 * testFilePath
+* deleted (enum '0','1')

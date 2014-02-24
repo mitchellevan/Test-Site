@@ -1,8 +1,4 @@
 
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
 --
 -- Database: `open_a11y_testing`
 --
@@ -20,6 +16,7 @@ CREATE TABLE `results` (
   `testFileID` varchar(255) NOT NULL,
   `result` enum('Pass','Fail') NOT NULL,
   `comments` mediumtext NOT NULL,
+  `deleted` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`resultID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This table holds the specific results of testing ' AUTO_INCREMENT=1 ;
 
@@ -32,6 +29,7 @@ CREATE TABLE `results` (
 CREATE TABLE `testFiles` (
   `testFileID` varchar(255) NOT NULL,
   `testFilePath` varchar(255) NOT NULL,
+  `deleted` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`testFileID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This table holds the details of the files to be tested. ';
 
@@ -53,5 +51,6 @@ CREATE TABLE `users` (
   `atType` varchar(255) NOT NULL,
   `atBrand` varchar(255) NOT NULL,
   `atVersion` varchar(255) NOT NULL,
+  `deleted` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`userKey`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This table holds the users of the system and their platform information. ';
