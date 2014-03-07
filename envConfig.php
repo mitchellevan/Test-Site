@@ -12,8 +12,7 @@ define('DB_CONFIG', serialize($PDOConnection));
 $class_directories = array(
     $_SERVER['DOCUMENT_ROOT'] . '/lib/php/',
     $_SERVER['DOCUMENT_ROOT'] . '/lib/php/vendor/',
-    $_SERVER['DOCUMENT_ROOT'] . '/includes/gs_libs/',
-    '/users/karlgroves/dropbox/sites/gs_libs/');
+    $_SERVER['DOCUMENT_ROOT'] . '/includes/gs_libs');
 
 
 // get the path to the includes directory
