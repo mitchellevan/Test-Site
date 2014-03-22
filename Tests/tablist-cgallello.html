@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>tablist cgallello</title>
+</head>
+<body>
+  <div role="tablist">
+      <div role="tablist">
+          <div id="tab1" role="tab" aria-controls="tabpanel1" aria-selected="true">Tab 1</div>
+          <div id="tab2" role="tab" aria-controls="tabpanel2">Tab 2</div>
+          <div id="tab3" role="tab" aria-controls="tabpanel3">Tab 3</div>
+      </div>
+      <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
+      	<button type="button">Tab 1 button</button>
+      </div>
+      <div id="tabpanel2" role="tabpanel" aria-labelledby="tab1">
+      	<button type="button">Tab 2 button</button>
+      </div>
+      <div id="tabpanel3" role="tabpanel" aria-labelledby="tab1">
+      	<button type="button">Tab 2 button</button>
+      </div>
+  </div>
+</body>
+</html>
