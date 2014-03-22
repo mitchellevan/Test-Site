@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>tablist cgallello</title>
+    <link rel="stylesheet" type="text/css" href="/global-assets/css/global.css" />
+</head>
+<body>
+    <div role="combobox" aria-expanded="true">
+        <div id="label">Label: </div>
+        <input type="text" 
+            aria-labelledby="label"
+            aria-owns="listbox"
+            aria-expanded="true" />
+        <div role="button" id="dropdown-button" aria-label="Open list of items" aria-controls="listbox"> Down arrow button </div>
+        <div role="listbox" id="listbox">
+            <div role="option">Option 1</div>
+            <div role="option" id="selected">Option 2</div>
+            <div role="option">Option 3</div>
+        </div>
+    </div>
+</body>
+</html>
