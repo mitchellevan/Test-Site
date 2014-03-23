@@ -1,5 +1,8 @@
 # Contributing
 
+## About this Project
+**Important** This project is solely for managing the testing site: IOW the site which allows visitors to come and test the files.  This project is not for contributing to the tests themselves. The tests themselves are managed through [https://github.com/Open-A11y-Testing/Test-Triage](https://github.com/Open-A11y-Testing/Test-Triage). Please go there if you're interested in submitting potential new tests.
+
 ## Platform
 The Open A11y Test Site is built on a basic LAMP Platform. The backend is run on PHP and MySQL running on Apache on CentOS.  The front-end is HTML5 and CSS3.
 
