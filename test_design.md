@@ -23,9 +23,10 @@ simple vs. composite -- there is not a bright line between them, but "simple" is
 
 ## personas (who works with the system)
 
-test writer
-test reviewer
-? rest reviewer
+* test writer
+* test reviewer
+* tester
+* ? test result reviewer
 
 ## test design
 
@@ -45,7 +46,7 @@ metadata about a test:
 ## simple tests
 
 * host language: HTML4, HTML5, SVG
-* implicit roles, explicit roles
+* single implicit role, or single explicit role
 * state and/or property
 
 ## composite tests
@@ -58,74 +59,73 @@ metadata about a test:
 
 ## instructions and expected
 
-Example: role=checkbox on a span
-metadata
-Instructions: (1) Locate the "Apples" checkbox. (2) Click "Apples". 
-Expected: The checkbox should now be checked.
+Example: Anchor with aria-label
 
-Example: banner on a div
+* Anchor with aria-label, where the label does not match the text node inside of it.
+* metadata:
+** spec is clear; enumeration of valid host languages (html4 html5 svg)
+** element: link
+** aria attribute(s): aria-label
+** date published: (see discussion below)
+** Specific assertion: aria-label value is revealed, and the anchor value is not.
+* Visible instructions: (1) Locate the link. (2) Read the link text.
+* Expected results: The link text should be "xxxxx".
 
-Example: Anchor
+Example: role=checkbox on a span  
+* metadata  
+* Instructions: (1) Locate the "Apples" checkbox. (2) Click "Apples".  
+* Expected results: The checkbox should now be checked.
 
-Anchor with aria-label, where the label does not match the text node inside of it.
-metadata {
-spec is clear; enumeration of valid host languages (html4 html5 svg)
-element: link
-aria attribute(s): aria-label
-date published: (to confirm what date this is, etc.)
-}
-Specific assertion: aria-label value is revealed, and the anchor value is not.
-Instructions: (1) Locate the link. (2) Read the link text.
-Expected results: The link text should be "xxxxx".
+Example: role="banner" on a div
 
-## what to fill in
+## what the tester should fill in, in a questionnaire for each test
 
-pass, fail, not clear
-comments
+* pass, fail, not clear
+* comments
 
-## SCOPE of iteration 1 of 
+## SCOPE of iteration 1 of this document (Saturday 2014.03.22)
 
-proposed: what does a person need in order to write a test, where the spec is clear
+Proposed: what does a person need in order to write a test, where the spec is clear
 
-question: do we write AT-specific instructions?
+## Assumptions
 
-## assumptions
+Do we write AT-specific instructions? Current assumption is no.
 
-hand write
+Hand write each test. (Generated tests are an optimization.)
 
-## somebody else's scope
+## Somebody else's scope
 
-* instructions for testing in general
-
+* Instructions for testing in general, e.g. home page that leads a tester into the tests.
 * capture (outside of individual test):
 ** AT and version
 
 important open questions:
-* is the metadata we're reporting the right set of data?
-* how do you get into the test page, and get back out of it, and report your results?
 
-what are our simple tests? this is not a question for the test format; Jeremy and Dylan are working on this.
+* Is the metadata we're reporting the right set of data?
+* How do you get into the test page, and get back out of it, and report your results?
 
-* example: 14 region roles
-* which tests can be automatically generated?
+What are our simple tests? This is not a question for the test format; Jeremy and Dylan are working on this.
+
+* Example: 14 region roles
+* Which tests can be automatically generated?
 
 ## BACKLOG - post iteration 1, and open questions
 
-* Can there be multiple tests per page?
+Can there be multiple tests per page?
 
 Privacy statement.
 
-Instruction to test writer: Don't be evil. E.g.
+Instruction to test writer: Don't be evil. E.g. Don't allow script injection.
 
 Request: We want a human-readable date, so the person seeing it has an idea of how old this is. We also will need a way to tell which version of a test the person tested; this is a data capture question.
 
-I18n?
+I18n (internationalization) of:
 
 * instructions
 * natural language content of the test
 
 Do we show the assertion to the tester? It might be confusing for a novice tester.
 
-* minimum browser
-** effect on Karl's jQuery assumption
-* if we find that AT-specific instructions are 
+Minimum browser, and effect on Karl's jQuery assumption
+
+As elements of this proposal are settled, we'll update contributing.md. 
