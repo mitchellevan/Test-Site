@@ -27,6 +27,7 @@ Fields:
 This table holds the specific results of testing - in other words whether the test passed or failed and why.
 
 Fields:
+
 * resultID
 * userKey (maps to users.userKey)
 * dateAdded

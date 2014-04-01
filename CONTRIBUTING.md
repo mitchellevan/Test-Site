@@ -1,7 +1,14 @@
 # Contributing
 
 ## Platform
-The Open A11y Test Site is built on a basic LAMP Platform. The backend is run on PHP and MySQL running on Apache on CentOS.  The front-end is HTML5 and CSS3.
+* The Open A11y Test Site is built on a basic LAMP Platform. 
+* The backend is run on PHP and MySQL running on Apache on CentOS.  
+* The front-end is HTML5 and CSS3.
+* SASS is used to compile the CSS
+* jQuery is used for JavaScript
+
+If you're proficient in any of these, we encourage you to contribute!
+
 
 ## General Guidelines
 **Note February 22, 2014: This information is subject to numerous and drastic changes in the near future. For now, email karl@karlgroves.com to discuss ways to contribute**
